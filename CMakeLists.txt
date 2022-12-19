@@ -4,7 +4,8 @@ project(untitled1fff VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
+set(CMAKE_STATIC_LINKER_FLAGs "-static")
+set(QT_STATIC PLUGIN TRUE)
 find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
 
 qt_add_executable(appuntitled1fff
